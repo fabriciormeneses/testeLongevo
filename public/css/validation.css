@@ -1,0 +1,6 @@
+label.error {
+	color: red !important;
+}
+.form-control.  error{
+    border: 1px solid red!important;
+}

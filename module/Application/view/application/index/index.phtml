@@ -1,0 +1,62 @@
+<div class="row">
+    <div class="col-lg-3">
+        <img src="img/logo.png" class="img-thumbnail">
+    </div>
+</div>
+<div class="col-lg-9">
+    <h3>Abertura de Chamados</h3>
+</div>
+
+<div class="row">
+    <div class="col-lg-6" id="form-container">
+        <form id="chamado" data-toggle="validator" method="post">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        Preencha seus dados
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <fieldset>
+                        <div class="row form-group">
+                            <div class="col-lg-12">
+                                <label>Nome Completo</label>
+                                <input class="form-control" type="text" name="nome" id="nome" pattern="^[A-z\s, ã,á,à,â,ê,í,ú,õ,é,ü,ç]+$" required>
+                            </div>
+                        </div>
+
+                        <div class="row form-group">
+                            <div class="col-lg-6 col-xs-6">
+                                <label>Numero do Pedido</label>
+                                <input class="form-control" type="text" name="npedido" id="npedido" pattern="^[0-9]+$"required>
+                            </div>
+
+                            <div class="col-lg-6 col-xs-6">
+                                <label>Titulo</label>
+                                <input class="form-control" type="text" name="titulo" id="titulo" required>
+                            </div>
+                        </div>
+
+                        <div class="row form-group">
+                            <div class="col-lg-12">
+                                <label>Email</label>
+                                <input class="form-control" type="email" name="email" id='email' required>
+                            </div>
+                        </div>
+
+                        <div class="row form-group">
+                            <div class="col-lg-12">
+                                <label>Observações</label>
+                                <textarea name="observacoes" id="observacoes" class="form-control"></textarea>
+                            </div>
+                        </div>
+
+                        <div>
+                            <button type="submit" class="btn btn-lg btn-info next-step">Enviar</button>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
